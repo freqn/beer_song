@@ -14,7 +14,6 @@ class BeerSong
   private
 
   def bottles(num)
-
     case num
     when 1
       "1 bottle"
@@ -25,7 +24,7 @@ class BeerSong
     else
       "#{num} bottles"
     end
-  end 
+  end
 
   def first_phrase(num)
     <<-EOR
