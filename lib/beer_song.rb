@@ -14,16 +14,18 @@ class BeerSong
   private
 
   def bottles(num)
-    if num == 1
+
+    case num
+    when 1
       "1 bottle"
-    elsif num == 0
+    when 0
       "no more bottles"
-    elsif num == -1
+    when -1
       "99 bottles"
     else
       "#{num} bottles"
     end
-  end
+  end 
 
   def first_phrase(num)
     <<-EOR
